@@ -1,0 +1,256 @@
+/* ==========================
+   GENERAL STYLES
+========================== */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  text-align: center; /* Default center unless overridden */
+}
+
+a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ==========================
+   HEADER
+========================== */
+.site-header {
+  background-color: #007acc;
+  color: white;
+  padding: 2rem 1rem;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+.nav-links {
+  margin-top: 1rem;
+}
+
+.nav-links a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* ==========================
+   BIO SECTION
+========================== */
+.bio-section {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.bio-section h2 {
+  color: #007acc;
+  font-size: 2rem;
+}
+
+.bio-section h3 {
+  margin-top: 1.5rem;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.skills-list li {
+  background-color: #007acc;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 0.95rem;
+}
+
+/* ==========================
+   PROJECTS SECTION
+========================== */
+.projects-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  text-align: left; /* Only this section left-aligned */
+}
+
+.projects-section h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #007acc;
+}
+
+.project {
+  border-left: 5px solid #007acc;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  background-color: #fafafa;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.project:hover {
+  background-color: #f0f8ff;
+}
+
+.project h3 {
+  margin-top: 0;
+}
+
+.project p {
+  margin: 0.5rem 0 1rem;
+}
+
+.project a {
+  color: #007acc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+.project-image {
+  width: 100%;
+  max-width: 700px;
+  margin-top: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  display: block;
+}
+
+/* ==========================
+   BLOG SECTION
+========================== */
+.blog-section {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.blog-section h2 {
+  color: #007acc;
+  font-size: 2rem;
+}
+
+/* ==========================
+   CONTACT SECTION
+========================== */
+.contact-section {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.contact-section h2 {
+  color: #007acc;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-section input,
+.contact-section textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-section button {
+  background-color: #007acc;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-section button:hover {
+  background-color: #005e99;
+}
+
+/* ==========================
+   CONTACT SECTION
+========================== */
+.footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #007acc;
+  color: white;
+  margin-top: 3rem;
+}
+
+.header-image-container {
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.header-image {
+  width: 190px;
+  height: 230;
+  border-radius: 8px%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+pre code {
+  display: block;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 1rem;
+  margin: 1rem 0;
+  overflow-x: auto;
+  font-family: Consolas, monospace;
+  border-left: 4px solid #007acc;
+  border-radius: 5px;
+}

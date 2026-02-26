@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Adrian Hehir's Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Section 1 – Personal Info -->
+  <header class="site-header">
+    <h1>Adrian Hehir</h1>
+    <p class="tagline">adrian.hehir@generation.org</p>
+    <nav class="nav-links">
+      <a href="#bio">Bio</a>
+      <a href="#projects">Projects</a>
+      <a href="/blog/">Blog</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="header-image-container">
+    <img src="assets/face_pic.jpg" alt="Adrian Hehir Profile" class="header-image">
+  </div>
+
+
+  <!-- Section 2 – Bio -->
+  <section id="bio" class="bio-section">
+    <h2>Bio</h2>
+
+    <p>
+      I am a technical instructor for Generation UK and Ireland, a leading education charity in the UK.
+      I am passionate about delivering Amazon Web Service, IT, and Data Analytics courses to unemployed
+      and under-employed people so they can achieve their potential. 
+    </p>
+
+    <h3>Skills & Preferred Tools</h3>
+    <ul class="skills-list">
+      <li>Teaching</li>
+      <li>Data Analytics</li>
+      <li>Excel</li>
+      <li>Python</li>
+      <li>SQL</li>
+      <li>MS Power BI</li>
+      <li>Amazon Web Services (AWS)</li>
+      <li>GitHub</li>
+      <li>MS Power Platform</li>
+      <li>O/Ss Windows and Linux</li>
+          
+    </ul>
+  </section>
+
+  <!-- Section 3 – Projects -->
+  <section id="projects" class="projects-section">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>👾 Alien Space Invader Game (Python)</h3>
+      <p>A classic arcade-style alien invader game coded in Python using Pygame.
+        Demonstrating use of Python Classes. 
+      </p>
+      <!-- New image added here -->
+      <img src="assets/alien_space_invader.JPG" alt="Alien Space Invader Game Screenshot" class="project-image">
+      <a href="https://github.com/ahehir101/alien_space_invader_game" target="_blank">View Source Code on GitHub</a>
+    </div>
+
+  <div class="project">
+    <h3>🔗 Spell Write Now Website</h3>
+    <p>
+      Live website of a static site running off an Amazon Web Services (AWS) S3 bucket.
+    </p>
+    <p>
+      This website was created using modern CI/CD automation principles, including:
+    </p>
+    <ul>
+      <li>Development in <strong>Visual Studio Code</strong></li>
+      <li>Version control using <strong>Git</strong> and <strong>GitHub</strong></li>
+      <li>Deployment automation with <strong>GitHub Actions</strong></li>
+    </ul>
+    <p>
+      The site is delivered securely using <strong>HTTPS</strong> via <strong>AWS Certificates</strong> and distributed globally through <strong>AWS CloudFront</strong>.
+    </p>
+    <p>
+      🔗 <a href="https://spellwritenow.com" target="_blank">Visit Live Website</a><br>
+      🧾 <a href="https://github.com/ahehir101/grad_project" target="_blank">View Source Code on GitHub</a>
+    </p>
+  </div>
+
+
+  <div class="project">
+    <h3>📊 Power BI Sales Dashboard</h3>
+    <p>This dashboard visualizes sales performance, customer segmentation, and trends over time.</p>
+    <img src="assets/Power_BI.JPG" alt="Power BI Dashboard Screenshot" class="project-image">
+  </div>
+
+
+  <div class="project">
+    <h3>🧠 SQL Data Analysis Showcase</h3>
+    <p>This section demonstrates SQL JOIN skills.</p>
+
+    <pre><code class="sql">
+--      List all shipments along with the name of their origin port. Include all shipments, 
+--      even if the origin port does not exist in the Ports table. 
+--      Show the shipment_id, origin_port_id, port_name, shipment_year, and shipment_weight_tonnes.
+SELECT 
+    s.shipment_id,
+    s.origin_port_id,
+    p.port_name AS origin_port_name
+FROM dbo.Shipments s
+LEFT JOIN dbo.Ports p
+    ON s.origin_port_id = p.port_id;
+    </code></pre>
+  </div>
+
+
+    <div class="project">
+      <h3>📈 Excel Dashboard Screenshot</h3>
+      <p>A dashboard built in Excel using Pivot tables and PivotCharts.</p>
+      <img src="assets/excel-dashboard.PNG" alt="Excel Dashboard Screenshot" class="project-image">
+    </div>
+  </section>
+
+  <!-- Section 4 – Blog -->
+   <section id="blog" class="blog-section">
+    <h2>Blog</h2>
+    <a href="/blog/" target="_blank">View blog page</a>
+
+  <!-- Section 5 – Contact -->
+  <section id="contact" class="contact-section">
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/xdkdpbaj" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="_replyto" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Adrian Hehir. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
